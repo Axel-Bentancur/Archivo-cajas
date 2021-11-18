@@ -1,0 +1,33 @@
+.box-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "search list-display";
+  grid-gap: 0 2rem;
+  padding: 2rem;
+}
+/*.form-container {
+  border: 1px solid #d1d1d1;
+  padding: 1rem;
+  border-radius: 8px;
+  width: 250px;
+  margin: auto;
+}
+.white-text {
+  height: 21px;
+}
+.error-msg {
+  color: #dc3545;
+} */
+/* .form-container {
+  height: 200px;
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 2rem auto;
+  padding: 2rem;
+}
+ */
+.container-main {
+  grid-area: main;
+}

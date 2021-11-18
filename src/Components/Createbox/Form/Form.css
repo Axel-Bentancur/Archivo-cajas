@@ -1,0 +1,69 @@
+.form-container {
+  grid-area: search;
+  margin: 35px auto;
+}
+.form {
+  width: 300px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  background: #f5f5f5;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.form .tab-header {
+  height: 50px;
+  line-height: 50px;
+}
+
+.form .tab-header > div {
+  width: 50%;
+  float: left;
+  text-align: center;
+  background: #ddd;
+  color: #555;
+  cursor: pointer;
+}
+.form .tab-header > div.active {
+  background: #f5f5f5;
+  color: #111;
+}
+.form .tab-content {
+  padding: 20px;
+}
+.form .tab-content .form-element {
+  margin: 10px 0;
+}
+.form .tab-content .form-element input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #aaa;
+  font-size: 16px;
+  background: #f5f5f5;
+  border-radius: 5px;
+  outline: none;
+}
+.form .tab-content .form-element label {
+  color: #111;
+}
+.form .tab-content > div.active {
+  display: block;
+}
+.form .tab-content > div {
+  display: none;
+}
+.form .tab-content .tab-body > div.type_active {
+  display: none;
+}
+.msg_box {
+  display: flex;
+  color: #dc3545;
+  align-items: center;
+  padding-top: 10px;
+  font-size: 15px;
+  font-weight: 600;
+}
+.icon {
+  padding-right: 1rem;
+}
+.form-check {
+  margin-top: 10px;
+}

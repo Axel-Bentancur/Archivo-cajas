@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+/**********************************************************************************************/
+.container-grid {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr;
+  grid-template-rows: 12vh 88vh;
+  grid-template-areas:
+    "nav"
+    "main";
+}

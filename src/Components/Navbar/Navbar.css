@@ -1,0 +1,11 @@
+.navigation {
+  grid-area: nav;
+}
+.navbar {
+  padding: 0;
+}
+.nav-inaes {
+  padding: 0.5rem;
+  height: 100%;
+  background: #0072bc;
+}
