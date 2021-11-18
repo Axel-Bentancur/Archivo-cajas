@@ -18,6 +18,7 @@ export default function List({
     setModalState(true);
   };
 
+  console.log(data.files.length);
   return (
     <div className="list-container">
       <h4 className="title-list">Caja Adea N° {data.box_number || ""}</h4>
@@ -65,7 +66,7 @@ export default function List({
           </tbody>
         </table>
       </div>
-      {tab === "create" ? (
+      {tab === "create" && data.files.length > 0 ? (
         <div className="form-element">
           <button
             type="button"
