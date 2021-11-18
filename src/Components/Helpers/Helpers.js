@@ -3,13 +3,13 @@ import axios from "axios";
 /************************************* BOX EXISTENCE ************************************************/
 
 export const getAllBoxes = async () => {
-  const url = `http://localhost:3001/search/all/`;
+  const url = `https://archivo-adea.herokuapp.com/search/all/`;
   const res = await axios.get(url);
   return res.data;
 };
 
 export const boxExistence = async (box_number) => {
-  const url = `http://localhost:3001/search/boxes/${box_number}`;
+  const url = `https://archivo-adea.herokuapp.com/search/boxes/${box_number}`;
   const res = await axios.get(url);
   return res.data;
 };
@@ -31,7 +31,7 @@ export const validateBoxField = async (box) => {
 
 export const fileExistence = async (file) => {
   const { fileType, number, yearNumEx, bodyNumEx } = file;
-  const url = `http://localhost:3001/search/files/?type=${fileType}&number=${number}&year=${yearNumEx}&body=${bodyNumEx}`;
+  const url = `https://archivo-adea.herokuapp.com/search/files/?type=${fileType}&number=${number}&year=${yearNumEx}&body=${bodyNumEx}`;
   const res = await axios.get(url);
   return res.data;
 };
@@ -78,7 +78,7 @@ export const validateFileField = async (file) => {
 /************************************* CREATE BOX ************************************************/
 
 export const createBox = async (files) => {
-  const url = "http://localhost:3001/box";
+  const url = "https://archivo-adea.herokuapp.com/box";
   const res = await axios.post(url, files);
   return res.data;
 };
