@@ -14,9 +14,6 @@ export default function Home() {
         </div>
 
         <div className="options-box">
-          <Link to="/">
-            <div className="button">Buscar Archivo</div>
-          </Link>
           <Link to="/boxes">
             <div className="button">Nueva Caja</div>
           </Link>
